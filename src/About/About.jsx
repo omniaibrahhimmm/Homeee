@@ -1,8 +1,14 @@
 
 import React from 'react'
+import { useEffect } from 'react';
 import classNames from 'classnames'
 import StyleAbout from './About.module.css';
 export default function About() {
+
+    useEffect(() => {
+    document.title = 'About Us'; // ← العنوان الجديد للصفحة
+  }, []);
+
   return (
  <>
 
